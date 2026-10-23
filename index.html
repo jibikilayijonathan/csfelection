@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Élections HLM 2026 | La CSF de la Somme — Agissons pour le logement</title>
+  <meta name="description" content="Élections des représentants des locataires HLM dans la Somme du 5 novembre au 3 décembre 2026. Avec la CSF, agissons pour le logement !">
+  <link rel="icon" type="image/png" href="logo-csf.png?v=3">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Barre de progression de lecture -->
+  <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+
+  <!-- Bandeau d'annonce -->
+  <div class="topbar">
+    <span class="pulse-dot" aria-hidden="true"></span>
+    <span>Élections des représentants des locataires HLM dans la Somme : <strong>du 5 novembre au 3 décembre 2026</strong></span>
+    <a href="#calendrier">En savoir plus →</a>
+  </div>
+
+  <!-- En-tête -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="brand" href="#accueil" aria-label="La CSF de la Somme — accueil">
+        <img src="logo-csf.png?v=3" alt="Logo la CSF — Confédération Syndicale des Familles" class="brand__logo">
+        <span class="brand__text">
+          <span class="brand__name">La CSF</span>
+          <span class="brand__sub">Fédération de la Somme</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Menu principal">
+        <a href="#comment-voter">Pourquoi voter</a>
+        <a href="#engagements">Nos engagements</a>
+        <a href="#actions">Nos actions</a>
+        <a href="#terrain">Sur le terrain</a>
+        <a href="#qui-sommes-nous">Qui sommes-nous</a>
+        <a href="#documents">Documents</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="btn btn--orange btn--sm header__cta" href="#comment-voter"><i class="fa-solid fa-check-to-slot"></i> Je vote CSF</a>
+
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile">
+      <a href="#comment-voter">Pourquoi voter</a>
+      <a href="#engagements">Nos engagements</a>
+      <a href="#actions">Nos actions</a>
+      <a href="#terrain">Sur le terrain</a>
+      <a href="#qui-sommes-nous">Qui sommes-nous</a>
+      <a href="#documents">Documents</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn--orange" href="#comment-voter"><i class="fa-solid fa-check-to-slot"></i> Je vote la CSF</a>
+    </nav>
+  </header>
+
+  <main id="accueil">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__rays" aria-hidden="true"></div>
+      <div class="hero__petals" id="hero-petals" aria-hidden="true"></div>
+
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="tag reveal" data-delay="0"><i class="fa-solid fa-bullhorn"></i> Campagne officielle • Somme (Amiens &amp; Abbeville)</span>
+
+          <h1 class="hero__title reveal" data-delay="100">
+            Élections HLM <span class="hero__year">2026</span>
+          </h1>
+
+          <div class="bubble reveal" data-delay="200">
+            <span class="bubble__kicker">Une force pour mieux vivre</span>
+            <p class="bubble__title">
+              Avec la CSF<br>
+              <span class="hl">agissons pour</span><br>
+              <span class="typed" id="typed">le logement</span><span class="caret" aria-hidden="true">|</span> !
+            </p>
+            <p class="bubble__text">Ne laissons pas d'autres décider à notre place. Votons pour une voix exigeante, indépendante et solidaire au sein de nos bailleurs sociaux&nbsp;!</p>
+          </div>
+
+          <div class="date-strip reveal" data-delay="300">
+            <span class="date-strip__icon"><i class="fa-solid fa-calendar-days"></i></span>
+            <span>
+              <small>Dates du scrutin</small>
+              <strong>Du 5 novembre au 3 décembre 2026</strong>
+            </span>
+          </div>
+
+          <div class="hero__actions reveal" data-delay="400">
+            <a class="btn btn--yellow" href="#comment-voter"><i class="fa-solid fa-list-check"></i> Comment voter (3 étapes)</a>
+            <a class="btn btn--ghost" href="#contact"><i class="fa-solid fa-phone"></i> Nous contacter</a>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal" data-delay="200">
+          <div class="poster" id="poster">
+            <span class="poster__badge">Affiche officielle 2026</span>
+            <img src="affiche.jpg" alt="Affiche Élections HLM 2026 : Avec la CSF, agissons pour le logement" width="869" height="1228">
+            <p class="poster__caption">La CSF agit avec la Fédération Syndicale des Familles Monoparentales (FSFM)</p>
+          </div>
+        </div>
+      </div>
+
+      <svg class="hero__wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,40 C360,90 1080,-10 1440,40 L1440,80 L0,80 Z"/></svg>
+    </section>
+
+    <!-- COMPTE À REBOURS -->
+    <section class="countdown" id="calendrier">
+      <div class="container countdown__inner">
+        <div class="countdown__label reveal">
+          <span class="pill pill--dark">Mobilisation générale</span>
+          <h2 id="countdown-title">Ouverture du scrutin dans :</h2>
+          <p id="countdown-sub">Soyez prêts à voter dès réception de votre matériel de vote.</p>
+        </div>
+        <div class="countdown__grid reveal" data-delay="150" id="countdown">
+          <div class="cd-box"><span class="cd-num" data-unit="days">--</span><span class="cd-lbl">Jours</span></div>
+          <div class="cd-box"><span class="cd-num" data-unit="hours">--</span><span class="cd-lbl">Heures</span></div>
+          <div class="cd-box"><span class="cd-num" data-unit="minutes">--</span><span class="cd-lbl">Minutes</span></div>
+          <div class="cd-box cd-box--accent"><span class="cd-num" data-unit="seconds">--</span><span class="cd-lbl">Secondes</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMENT VOTER -->
+    <section class="section" id="comment-voter">
+      <div class="container">
+        <header class="section__head reveal">
+          <h2 class="section__title">Faites entendre votre voix</h2>
+          <div class="stripe" aria-hidden="true"></div>
+          <p>Les élections des locataires dans les conseils d'administration des bailleurs sociaux ont lieu tous les 4 ans. Vos représentants votent sur <strong>le budget, les loyers, les travaux de réhabilitation et l'entretien des résidences</strong>.</p>
+        </header>
+
+        <div class="steps">
+          <article class="step step--orange reveal" data-delay="0">
+            <span class="step__num">01</span>
+            <h3>Je reçois mon matériel</h3>
+            <p>Votre bailleur social (Amsom Habitat, Baie de Somme Habitat, Clésence, ICF Habitat Nord-Est…) vous adresse votre matériel de vote par la poste.</p>
+            <footer><i class="fa-solid fa-envelope-open-text"></i> Pli électoral officiel avec professions de foi</footer>
+          </article>
+          <article class="step step--blue reveal" data-delay="120">
+            <span class="step__num">02</span>
+            <h3>Je choisis la liste CSF</h3>
+            <p>Sélectionnez le bulletin <strong>« La Confédération Syndicale des Familles (CSF) »</strong>. Ne le raturez pas pour garantir la validité de votre vote.</p>
+            <footer><i class="fa-solid fa-hand-holding-heart"></i> Une défense militante des locataires</footer>
+          </article>
+          <article class="step step--green reveal" data-delay="240">
+            <span class="step__num">03</span>
+            <h3>Je vote avant le 3 décembre</h3>
+            <p>Selon les modalités prévues par votre bailleur&nbsp;:<br>• <strong>par correspondance</strong> avec l'enveloppe T&nbsp;;<br>• <strong>en ligne</strong> avec vos identifiants sécurisés.</p>
+            <footer><i class="fa-solid fa-stamp"></i> Envoi gratuit, aucun timbre requis</footer>
+          </article>
+        </div>
+
+        <div class="period reveal">
+          <span>Élections HLM 2026</span>
+          <strong>Du <em>5 novembre</em> au <em>3 décembre 2026</em></strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENGAGEMENTS -->
+    <section class="section section--tint" id="engagements">
+      <div class="container">
+        <header class="section__head reveal">
+          <h2 class="section__title">La CSF s'engage sur</h2>
+          <div class="stripe" aria-hidden="true"></div>
+          <p>Un mandat clair au service des familles, des personnes seules et de tous les locataires, sans exclusion.</p>
+        </header>
+
+        <div class="cards cards--4">
+          <article class="card card--purple reveal tilt" data-delay="0">
+            <span class="card__icon"><i class="fa-solid fa-heart"></i></span>
+            <h3>La bienveillance</h3>
+            <p>Une écoute attentive et sans jugement. Un accompagnement lors des difficultés familiales et des accidents de la vie, et le soutien des familles monoparentales.</p>
+          </article>
+          <article class="card card--orange reveal tilt" data-delay="100">
+            <span class="card__icon"><i class="fa-solid fa-mug-hot"></i></span>
+            <h3>La tranquillité</h3>
+            <p>Un cadre de vie apaisé et convivial : médiation de voisinage, calme dans les halls et cages d'escalier pour le repos de chacun.</p>
+          </article>
+          <article class="card card--blue reveal tilt" data-delay="200">
+            <span class="card__icon"><i class="fa-solid fa-shield-halved"></i></span>
+            <h3>La sécurité dans les résidences</h3>
+            <p>Éclairages réparés, contrôle des accès (interphones, badges, portes), sécurisation des aires de jeux et des abords.</p>
+          </article>
+          <article class="card card--green reveal tilt" data-delay="300">
+            <span class="card__icon"><i class="fa-solid fa-scale-balanced"></i></span>
+            <h3>La vigilance loyers &amp; charges</h3>
+            <p>Contrôle des factures de chauffage, d'eau et des charges locatives. Opposition aux hausses abusives et remboursement des trop-perçus.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACTIONS -->
+    <section class="section" id="actions">
+      <div class="container">
+        <header class="section__head reveal">
+          <h2 class="section__title">Nos actions au quotidien</h2>
+          <div class="stripe" aria-hidden="true"></div>
+          <p>La CSF n'agit pas seulement au moment des élections : nous sommes à vos côtés toute l'année.</p>
+        </header>
+
+        <div class="actions">
+          <article class="action action--purple reveal" data-delay="0">
+            <span class="action__icon"><i class="fa-solid fa-hammer"></i></span>
+            <div><h3>Réhabilitation</h3><p>Rénovation thermique contre les passoires énergétiques, menuiseries remplacées, fin de l'humidité.</p></div>
+          </article>
+          <article class="action action--orange reveal" data-delay="80">
+            <span class="action__icon"><i class="fa-solid fa-user-tie"></i></span>
+            <div><h3>Présence des gardiens</h3><p>Défense des postes de gardiens sur place : un interlocuteur humain, proche et réactif.</p></div>
+          </article>
+          <article class="action action--orange reveal" data-delay="160">
+            <span class="action__icon"><i class="fa-solid fa-magnifying-glass-dollar"></i></span>
+            <div><h3>Contrôle des charges</h3><p>Vérification des régularisations annuelles, des contrats de chauffage collectif et d'ascenseurs.</p></div>
+          </article>
+          <article class="action action--purple reveal" data-delay="240">
+            <span class="action__icon"><i class="fa-solid fa-wrench"></i></span>
+            <div><h3>Réparation rapide</h3><p>Fuites, eau chaude, serrures, éclairage : des délais d'intervention raisonnables.</p></div>
+          </article>
+          <article class="action action--purple reveal" data-delay="0">
+            <span class="action__icon"><i class="fa-solid fa-elevator"></i></span>
+            <div><h3>Entretien des ascenseurs</h3><p>Des ascenseurs qui fonctionnent, pour les personnes âgées, les parents et les personnes à mobilité réduite.</p></div>
+          </article>
+          <article class="action action--orange reveal" data-delay="80">
+            <span class="action__icon"><i class="fa-solid fa-handshake-angle"></i></span>
+            <div><h3>Lutte contre les incivilités</h3><p>Contre les dépôts sauvages, pour le respect mutuel dans les espaces partagés.</p></div>
+          </article>
+          <article class="action action--green action--wide reveal" data-delay="160">
+            <span class="action__icon"><i class="fa-solid fa-wheelchair"></i></span>
+            <div><h3>Accessibilité et bien-être</h3><p>Accès adaptés pour tous, locaux vélos et poussettes, espaces verts et jardins partagés au pied des immeubles.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TERRAIN -->
+    <section class="section section--tint" id="terrain">
+      <div class="container terrain">
+        <div class="terrain__photos">
+          <figure class="photo photo--a reveal" data-delay="0">
+            <img src="terrain-stand.jpg" alt="Stand de la CSF lors d'une rencontre avec les habitants" loading="lazy" width="987" height="742">
+            <figcaption><i class="fa-solid fa-location-dot"></i> Rencontres au pied des immeubles</figcaption>
+          </figure>
+          <figure class="photo photo--b reveal" data-delay="150">
+            <img src="terrain-permanence.jpg" alt="Local d'accueil de la CSF de la Somme" loading="lazy" width="987" height="742">
+            <figcaption><i class="fa-solid fa-door-open"></i> Notre local de permanence</figcaption>
+          </figure>
+        </div>
+
+        <div class="terrain__text">
+          <div class="stripe stripe--left reveal" aria-hidden="true"></div>
+          <h2 class="section__title section__title--left reveal">Choisissez la CSF :<br><span>présents sur le terrain</span></h2>
+          <p class="reveal">Les bénévoles et militants de la CSF vivent au cœur des quartiers de la Somme. Nous connaissons vos résidences parce que ce sont aussi les nôtres.</p>
+          <ul class="checklist">
+            <li class="reveal" data-delay="0"><i class="fa-solid fa-check"></i><p><strong>Permanences régulières :</strong> accueil à Amiens et Abbeville pour vérifier vos quittances, vos charges et vous conseiller en cas de litige.</p></li>
+            <li class="reveal" data-delay="100"><i class="fa-solid fa-check"></i><p><strong>Visites de résidences :</strong> nous constatons avec vous les dégradations, pannes et besoins de travaux.</p></li>
+            <li class="reveal" data-delay="200"><i class="fa-solid fa-check"></i><p><strong>Indépendance :</strong> la CSF ne dépend d'aucun parti politique ni des bailleurs. Notre seule boussole : l'intérêt des locataires.</p></li>
+          </ul>
+          <a class="btn btn--blue reveal" href="#contact"><i class="fa-solid fa-people-roof"></i> Contacter notre équipe locale</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUI SOMMES-NOUS -->
+    <section class="section" id="qui-sommes-nous">
+      <div class="container">
+        <header class="section__head reveal">
+          <h2 class="section__title section__title--blue">Qui sommes-nous ?</h2>
+          <div class="stripe" aria-hidden="true"></div>
+          <p>Une association nationale de défense des locataires, reconnue pour son expertise et son ancrage dans les quartiers.</p>
+        </header>
+
+        <div class="cards cards--3">
+          <article class="org org--blue reveal" data-delay="0">
+            <span class="org__icon"><i class="fa-solid fa-landmark"></i></span>
+            <h3>Conseil National de l'Habitat</h3>
+            <p>La Confédération Syndicale des Familles siège au <strong>CNH</strong>, l'instance où se discutent les textes sur le logement et les droits des locataires.</p>
+          </article>
+          <article class="org org--orange reveal" data-delay="120">
+            <span class="org__icon"><i class="fa-solid fa-users"></i></span>
+            <h3>Membre de l'UNAF</h3>
+            <p>La CSF est membre de l'<strong>Union Nationale des Associations Familiales</strong> et accompagne les familles dans plusieurs domaines.</p>
+          </article>
+          <article class="org org--green reveal" data-delay="240">
+            <span class="org__icon"><i class="fa-solid fa-children"></i></span>
+            <h3>Avec la FSFM</h3>
+            <p>La <strong>Fédération Syndicale des Familles Monoparentales</strong> agit au quotidien avec la CSF pour défendre les droits des familles.</p>
+          </article>
+        </div>
+
+        <div class="stats reveal">
+          <div class="stat"><span class="stat__num" data-count="5">0</span><span class="stat__lbl">novembre : ouverture du vote</span></div>
+          <div class="stat"><span class="stat__num" data-count="3">0</span><span class="stat__lbl">décembre : clôture du vote</span></div>
+          <div class="stat"><span class="stat__num" data-count="4">0</span><span class="stat__lbl">ans de mandat pour vos élus</span></div>
+          <div class="stat"><span class="stat__num" data-count="365">0</span><span class="stat__lbl">jours par an à vos côtés</span></div>
+        </div>
+
+        <div class="motto reveal">
+          <img src="logo-csf.png?v=3" alt="" class="motto__logo" aria-hidden="true">
+          <div>
+            <span class="motto__kicker">Une force pour mieux vivre</span>
+            <h3>Confédération Syndicale des Familles</h3>
+            <p>Nous rassemblons les locataires pour des résidences solidaires, agréables à vivre et abordables.</p>
+            <a class="btn btn--yellow btn--sm" href="https://www.la-csf.org" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> www.la-csf.org</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="hero__petals" id="cta-petals" aria-hidden="true"></div>
+      <div class="container cta__inner reveal">
+        <span class="pill pill--light">Élections HLM Somme 2026</span>
+        <h2>Je défends mes droits,<br><span>je vote la CSF !</span></h2>
+        <p>Un bulletin CSF dans l'urne, c'est l'assurance d'avoir des administrateurs locataires attentifs aux loyers et à chaque euro de vos charges.</p>
+        <div class="cta__actions">
+          <a class="btn btn--yellow" href="#contact"><i class="fa-solid fa-user-plus"></i> Rejoindre la CSF de la Somme</a>
+          <a class="btn btn--ghost" href="#documents"><i class="fa-solid fa-download"></i> Télécharger le dépliant</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOCUMENTS À TÉLÉCHARGER -->
+    <section class="section" id="documents">
+      <div class="container">
+        <header class="section__head reveal">
+          <h2 class="section__title">Documents à télécharger</h2>
+          <div class="stripe" aria-hidden="true"></div>
+          <p>Téléchargez le dépliant et l'affiche de la campagne pour les lire, les imprimer ou les partager autour de vous.</p>
+        </header>
+
+        <div class="docs">
+          <article class="doc doc--orange reveal" data-delay="0">
+            <div class="doc__thumb"><img src="depliant_A3_page1_exterieur.png" alt="Aperçu du dépliant, faces extérieures" loading="lazy"></div>
+            <div class="doc__body">
+              <span class="doc__type"><i class="fa-solid fa-file-pdf"></i> PDF • A3</span>
+              <h3>Dépliant complet</h3>
+              <p>Le dépliant Élections HLM 2026, recto et verso, prêt à imprimer.</p>
+              <a class="btn btn--orange btn--sm" href="Depliant_CSF_Elections_HLM_2026_A3.pdf" download="Depliant_CSF_Elections_HLM_2026.pdf"><i class="fa-solid fa-download"></i> Télécharger</a>
+            </div>
+          </article>
+          <article class="doc doc--purple reveal" data-delay="100">
+            <div class="doc__thumb"><img src="depliant_A3_page1_exterieur.png" alt="Dépliant, page extérieure" loading="lazy"></div>
+            <div class="doc__body">
+              <span class="doc__type"><i class="fa-solid fa-image"></i> Image PNG</span>
+              <h3>Dépliant – extérieur</h3>
+              <p>La couverture et la page contacts du dépliant, en image.</p>
+              <a class="btn btn--purple btn--sm" href="depliant_A3_page1_exterieur.png" download><i class="fa-solid fa-download"></i> Télécharger</a>
+            </div>
+          </article>
+          <article class="doc doc--green reveal" data-delay="200">
+            <div class="doc__thumb"><img src="depliant_A3_page2_interieur.png" alt="Dépliant, page intérieure" loading="lazy"></div>
+            <div class="doc__body">
+              <span class="doc__type"><i class="fa-solid fa-image"></i> Image PNG</span>
+              <h3>Dépliant – intérieur</h3>
+              <p>Nos actions, nos engagements et les dates du scrutin, en image.</p>
+              <a class="btn btn--green btn--sm" href="depliant_A3_page2_interieur.png" download><i class="fa-solid fa-download"></i> Télécharger</a>
+            </div>
+          </article>
+          <article class="doc doc--blue reveal" data-delay="300">
+            <div class="doc__thumb"><img src="affiche.jpg" alt="Affiche de campagne Élections HLM 2026" loading="lazy"></div>
+            <div class="doc__body">
+              <span class="doc__type"><i class="fa-solid fa-file-pdf"></i> PDF</span>
+              <h3>Affiche de campagne</h3>
+              <p>L'affiche « Avec la CSF, agissons pour le logement », à imprimer.</p>
+              <a class="btn btn--blue btn--sm" href="affiche_csf_corrigee.pdf" download="Affiche_CSF_Elections_HLM_2026.pdf"><i class="fa-solid fa-download"></i> Télécharger</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--tint" id="contact">
+      <div class="container">
+        <header class="section__head reveal">
+          <h2 class="section__title section__title--blue">Contact &amp; permanences</h2>
+          <div class="stripe" aria-hidden="true"></div>
+          <p>Une question sur les élections ? Un problème de loyer ou de charges ? Les militants CSF de la Somme sont à vos côtés.</p>
+        </header>
+
+        <div class="contact">
+          <div class="contact__offices">
+            <article class="office office--blue reveal" data-delay="0">
+              <h3><i class="fa-solid fa-city"></i> La CSF de la Somme</h3>
+              <span class="office__sub">Siège départemental • Amiens</span>
+              <ul>
+                <li><i class="fa-solid fa-location-dot"></i> 18 rue des Jacobins – 80000 Amiens</li>
+                <li><i class="fa-solid fa-phone"></i> <a href="tel:0970050903">09 70 05 09 03</a> / <a href="tel:0626847177">06 26 84 71 77</a></li>
+                <li><i class="fa-solid fa-envelope"></i> <a href="mailto:la.csf.80agissons@gmail.com">la.csf.80agissons@gmail.com</a></li>
+              </ul>
+            </article>
+            <article class="office office--orange reveal" data-delay="120">
+              <h3><i class="fa-solid fa-building-user"></i> La CSF d'Abbeville</h3>
+              <span class="office__sub">Section locale • Abbeville</span>
+              <ul>
+                <li><i class="fa-solid fa-phone"></i> <a href="tel:0614286672">06 14 28 66 72</a></li>
+                <li><i class="fa-solid fa-envelope"></i> <a href="mailto:lacsf80.sectionabeville@gmail.com">lacsf80.sectionabeville@gmail.com</a></li>
+              </ul>
+            </article>
+            <div class="note reveal" data-delay="200">
+              <strong>Locataires concernés dans la Somme :</strong> Amsom Habitat, Baie de Somme Habitat, Clésence, Vilogia, ICF Habitat Nord-Est…
+            </div>
+          </div>
+
+          <form class="form reveal" id="contact-form" data-delay="100" novalidate>
+            <h3>Envoyez-nous un message</h3>
+            <p>Un militant de votre secteur (Amiens Métropole ou Abbeville) vous recontactera rapidement.</p>
+            <div class="form__row">
+              <label class="field"><span>Nom *</span><input name="nom" type="text" placeholder="Votre nom" required></label>
+              <label class="field"><span>Prénom *</span><input name="prenom" type="text" placeholder="Votre prénom" required></label>
+            </div>
+            <div class="form__row">
+              <label class="field"><span>Téléphone *</span><input name="telephone" type="tel" placeholder="06 00 00 00 00" required></label>
+              <label class="field"><span>Email</span><input name="email" type="email" placeholder="nom@exemple.fr"></label>
+            </div>
+            <label class="field"><span>Votre bailleur social *</span>
+              <select name="bailleur" required>
+                <option value="" disabled selected>Sélectionnez votre bailleur…</option>
+                <option>Amsom Habitat</option>
+                <option>Baie de Somme Habitat</option>
+                <option>Clésence</option>
+                <option>ICF Habitat Nord-Est</option>
+                <option>Vilogia</option>
+                <option>Autre bailleur social dans la Somme</option>
+              </select>
+            </label>
+            <label class="field"><span>Votre question ou situation *</span>
+              <textarea name="message" rows="4" placeholder="Précisez votre adresse et le motif de votre contact (charges, ascenseur, candidature…)" required></textarea>
+            </label>
+            <label class="consent"><input type="checkbox" required> J'accepte que mes coordonnées soient utilisées par la CSF 80 pour me répondre dans le cadre des élections et des droits des locataires.</label>
+            <button class="btn btn--orange btn--block" type="submit"><i class="fa-solid fa-paper-plane"></i> Envoyer ma demande</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIED DE PAGE -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <div class="footer__logo"><img src="logo-csf.png?v=3" alt="Logo la CSF"></div>
+        <p>Confédération Syndicale des Familles • Fédération de la Somme (Amiens &amp; Abbeville). Association nationale de défense des locataires.</p>
+        <a href="https://www.la-csf.org" target="_blank" rel="noopener noreferrer">www.la-csf.org</a>
+      </div>
+      <div>
+        <h4>Accès rapide</h4>
+        <ul>
+          <li><a href="#comment-voter">Modalités du scrutin</a></li>
+          <li><a href="#engagements">Nos engagements</a></li>
+          <li><a href="#actions">Nos actions au quotidien</a></li>
+          <li><a href="#terrain">Permanences de proximité</a></li>
+          <li><a href="#qui-sommes-nous">Qui sommes-nous</a></li>
+          <li><a href="#documents">Télécharger le dépliant</a></li>
+        </ul>
+      </div>
+      <div class="footer__qr">
+        <img src="qrcode.png" alt="QR code vers l'actualité CSF des élections HLM" width="96" height="96">
+        <p>Retrouvez l'actualité CSF des élections HLM en scannant ce QR code.</p>
+      </div>
+    </div>
+    <div class="container footer__legal">
+      <span>© 2026 La CSF de la Somme. Tous droits réservés.</span>
+      <span><i class="fa-solid fa-recycle"></i> Ne pas jeter sur la voie publique</span>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" aria-label="Revenir en haut"><i class="fa-solid fa-arrow-up"></i></button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
